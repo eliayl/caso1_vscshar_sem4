@@ -10,7 +10,7 @@ namespace caso1_vscshar_sem4
     {
     
         // --- 1. ALCANCE DE VARIABLES (Variable Global estática) ---
-        static string NOMBRE_INSTITUCION = "UNIVERSIDAD TECNOLÓGICA";
+        static string NOMBRE_INSTITUCION = "---------------****UPN****----------";
 
         static void MostrarEncabezado()
         {
@@ -124,7 +124,7 @@ namespace caso1_vscshar_sem4
 
             Console.WriteLine("\n--- INGRESO DE COMPONENTES DEL EXAMEN FINAL (50%) ---");
             double notaProyecto = ValidarNota("Ingresa la nota del Proyecto Final [40% del EF]: ");
-            double notaLab = ValidarNota("Ingresa la nota del Laboratorio [60% del EF]: ");
+            double notaLab = ValidarNota("Ingresa la nota del Laboratorio [60% del EF]:    ");
 
             string ciscoInput;
             while (true)
@@ -132,7 +132,7 @@ namespace caso1_vscshar_sem4
                 Console.Write("¿Completó el curso de Cisco? (s/n): ");
                 ciscoInput = Console.ReadLine()?.Trim().ToLower();
                 if (ciscoInput == "s" || ciscoInput == "n")
-                {
+                {  
                     break;
                 }
                 Console.WriteLine("❌ Error: Ingresa únicamente 's' (sí) o 'n' (no).");
